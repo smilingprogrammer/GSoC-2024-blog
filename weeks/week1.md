@@ -8,28 +8,25 @@ title: Week 1- Revisit project codebase
 ---
 
 ## Overview
-The first week of the project was a reconsideration phase, centered around selecting the most suitable pre-trained model for this project. In the original proposal, I intended to use a general-purpose GPT languge model. This decision was based on a shared belief within the community that auto-regressive models are the prime candidates for tasks like ours- the translation of natural language queries into formal SPARQL queries. However, the rise of open-source models particularly designed for code generation prompted us to revisit my approach. After short-listing options, [CodeGen] family models were identified as promisign starting points due to their competetive performance in code generation tasks and openness (released under Apache-2.0 license). 
+The first week of the project was a revisiting phase, centered around reading and understanding the code base more. Initially i have been able to run the entire pipeline during the writing of the original proposal to understand the current stage of the project and where it needs improvement. However, In this first week of revisiting the project, I made sure to try out every section of the pipeline without merging the entire pipeline. From this, i was able to dig out some part of the code base where my contrbution will be come in and applied. After going through the understanding the code base process, i have been able to understand more where my firstt contribution will come in, which is by changing the current semantic similarity search algorithm into a co-occurence or the most efficient algorithm.
 
 
 ## Insights
-While the roadmap for the project implementation may appear straightforward at first glance, several key questions have emerged that are critical to our progress:
-- Which model size yields the best results?
-- How can we effectively augment user input as a prompt to provide clues for relevant DBpedia entities?
-- What training approach should we employ?
-    - Zero/Few-shot learning
-    - Adding a translation head with/without fine-tuning
-    - Fine-tunning with general SPARQL queries
-    - Fine-tuning with DBpedia-specific SPARQL queries 
+While the roadmap for the project implementation may appear straightforward at first glance, from this first week, i have been able to understand:
+- How some part of the coode base works individually.
+- Have an understanding of where to make my contributions next week in other not to brake the entire codebase
+- And raise the question of:What training approach should we employ?
+    - How the co-occurence based algorithm will fit it
+    - How efficient can it be compared to the current semantic similarities approach.
+    - integrating the algorithm to fit in with the ontology predicates
 
-In the course of my research on answering these questions, I came across [NSQL] project. It shares a similar vision to my GSoC project, as it aims to train foundation models explicitly for SQL query generation. The discovery of the NSQL project has provided valuable insights that will further guide our design decisions in the upcoming weeks. Inspired by their approach, a promising avenue is to fine-tune one of the CodeGen variants with a large courpos of general SPARQL queries (formal statements) and then further fine-tune the model with DBPedia-specific SPARQL queries. 
+In the course of my research on answering these questions, I came across a [medium] article. This article explains in details how the co-occurence based algorithm works and also show a little bit of how to implement it in code. Although the code implementation may not be similar to our usecase, it gives me an insight and inspiration on how to implement the algorithm to fit our project needs. 
 
 
 
 
 ## Next week plan
-For the upcoming week, the plan is to dive deeper into CodeGen and NSQL models as a deep understanding of their nuances will be instrumental for our project. We aim to inspect the data and approches used for pre-training selected modesl.
+For the upcoming week, the plan is to dive deeper into the co-occurence algorithm, get to know how it is going to work for our project and fit its needs. And finally implement it in codes.
 
 ----
-[CodeGen]: https://huggingface.co/docs/transformers/model_doc/codegen
-[NSQL]: https://www.numbersstation.ai/post/introducing-nsql-open-source-sql-copilot-foundation-models
-
+[medium]: https://songxia-sophia.medium.com/collaborative-filtering-recommendation-with-co-occurrence-algorithm-dea583e12e2a
