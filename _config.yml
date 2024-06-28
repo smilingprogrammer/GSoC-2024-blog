@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Neural Extraction Framework in DBpedia
+description: A GSoC 2024 project page
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://smilingprogrammer.github.io/GSoC-2024
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  Project's GitHub Repo: https://github.com/dbpedia/neural-extraction-framework
