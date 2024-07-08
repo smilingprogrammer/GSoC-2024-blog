@@ -9,18 +9,8 @@ The goal of this [project] is to develop a framework for predicate resolution of
 
 This project will potentially generate millions of new statements. This new information could be released by DBpedia to the public as part of a new dataset. The creation of a neural extraction framework could introduce the use of robust parsers for a more accurate extraction of Wikipedia content.
 
-
-### Mentors
-Tommaso Soru, Ziwei XU, Mehrzad Shahinmoghadam, Yogesh Kulkarni
-
-### Topics
-Knowledge graphs, semantic web, ontology vocabularies, Extraction Framework
-
-----
-
-[DBpedia]: https://www.dbpedia.org/
-[project]: https://summerofcode.withgoogle.com/programs/2024/projects/J4tJODFV
-[Neural Extraction Framework]: https://github.com/dbpedia/neural-extraction-framework
+### Current Status of the pipeline
+Presently, an end-to-end system that translates any English sentence into triples using the DBpedia vocabulary has been implemented in this pipeline.
 
 
 ### Project workflow
@@ -57,3 +47,16 @@ entity_linking-.->redis_database(Redis database)
 dbpedia_lookup-.->ensemble(Ensemble)
 redis_database-.->ensemble
 ensemble-.->entity_uris -->
+
+
+### Mentors
+Tommaso Soru, Ziwei XU, Mehrzad Shahinmoghadam, Yogesh Kulkarni
+
+### Topics
+Knowledge graphs, semantic web, ontology vocabularies, Extraction Framework
+
+----
+
+[DBpedia]: https://www.dbpedia.org/
+[project]: https://summerofcode.withgoogle.com/programs/2024/projects/J4tJODFV
+[Neural Extraction Framework]: https://github.com/dbpedia/neural-extraction-framework
