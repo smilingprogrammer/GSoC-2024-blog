@@ -24,20 +24,20 @@ Knowledge graphs, semantic web, ontology vocabularies, Extraction Framework
 
 
 ### Project workflow
-```mermaid
+
+{% include mermaid.html %}
+<div class="mermaid">
 graph TD
     wiki_page[Wikipedia Page] --Extract plain text--> pure_text[Pure text]
 
-    pure_text--coreference resolution-->coref_resolved_text[Coreference Resolved Text]
-    coref_resolved_text-->sentences[Sentences]
-    sentences--sentence_i-->rebel(REBEL)
+    pure_text-->rebel(REBEL)
     rebel--as text-->entities[Entities]
     rebel--as text-->relations[Relations]
     
     relations--get embedding-->vector_similarity(Vector similarity with label embeddings);
     vector_similarity-->predicate_uris[Predicate URIs]
 
-    sentences--sentence_i-->annotation_for_genre(Annotate entities in text)
+    pure_text-->annotation_for_genre(Annotate entities in text)
 
     entities-->annotation_for_genre
 
@@ -48,4 +48,12 @@ graph TD
     entity_uris-->triples[Triples]
     predicate_uris-->triples[Triples]
     triples--Validate-->final_triples[Final triples]
-```
+
+    ;
+</div>
+<!-- entities-.->entity_linking(Other approaches for EL)
+entity_linking-.->dbpedia_lookup(DBpedia Lookup)
+entity_linking-.->redis_database(Redis database)
+dbpedia_lookup-.->ensemble(Ensemble)
+redis_database-.->ensemble
+ensemble-.->entity_uris -->
