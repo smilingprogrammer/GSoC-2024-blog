@@ -22,6 +22,7 @@ This project will potentially generate millions of new statements. This new info
     - Ability to adapt the pipeline output not only to the DBpedia vocabulary but to any specified one (e.g., SKOS, Wikidata, RDFS, or even a combination of many).
     - Validation of generated triples against the DBpedia ontology to avoid inconsistencies in data.
     - Categorising of extracted relations with respect to their semantics.
+    - Ability to export our final triples into an RDF triples file
 
 
 ### Project workflow
