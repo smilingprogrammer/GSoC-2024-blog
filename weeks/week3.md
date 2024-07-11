@@ -9,7 +9,7 @@ title: Week 3- Predicate Suggestion
 
 ## Overview
 
-In the third week of my GSoC journey, our primary focus was to improve the efficiency of the similarity algorithm and improving the result of the algorithm by making predicate suggestion for a relation/phrase that do not presen have a corresponding predicate in the ontology. We started by performing pre-computation for the the dbpedia predicates embeddings and then proceed to clustering the computed embeddings into 10 central vectors. This approach significantly reduces the computational load by leveraging clustering, making semantic search more efficient while dynamically updating the ontology with new predicates.
+In the third week of my GSoC journey, our primary focus was to improve the efficiency of the similarity algorithm and improving the result of the algorithm by making predicate suggestion for a relation/phrase that do not presently have a corresponding predicate in the ontology. We started by performing pre-computation for the the dbpedia predicates embeddings and then proceed to clustering the computed embeddings into 10 central vectors. This approach significantly reduces the computational load by leveraging clustering, making semantic search more efficient while dynamically updating the ontology with new predicates.
 
 We then proceed into making our pipeline perform the suggestion of a predicate given a scenerio where no close cluster or matching group predicate is found for the provided relation/phrase. We achieve this by computing the embeddings of the different vocabulary and finding the most related/similar word for the provided relation/phrase.
 
