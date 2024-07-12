@@ -27,8 +27,7 @@ This project will potentially generate millions of new statements. This new info
 
 ### Project workflow
 
-{% include mermaid.html %}
-<div class="mermaid">
+```mermaid
 graph TD
     wiki_page[Wikipedia Page] --Extract plain text--> pure_text[Pure text]
 
@@ -52,14 +51,7 @@ graph TD
     triples--Validate-->final_triples[Final triples]
 
     ;
-</div>
-<!-- entities-.->entity_linking(Other approaches for EL)
-entity_linking-.->dbpedia_lookup(DBpedia Lookup)
-entity_linking-.->redis_database(Redis database)
-dbpedia_lookup-.->ensemble(Ensemble)
-redis_database-.->ensemble
-ensemble-.->entity_uris -->
-
+```
 
 ### Mentors
 Tommaso Soru, Ziwei XU, Mehrzad Shahinmoghadam, Yogesh Kulkarni
