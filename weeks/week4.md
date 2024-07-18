@@ -9,9 +9,9 @@ title: Week 4- Entailment Technique for Predicate Suggestion
 
 ## Overview
 
-### Achieving Accurate Cluster Representation: A Week in Review
+### Achieving Accurate Cluster Representation
 
-This week has been a remarkable journey in refining a method to accurately determine representative words or phrases for clusters of similar terms. By leveraging advanced natural language processing (NLP) techniques and deep learning models, I managed to enhance the process of identifying the most representative terms for each cluster. Here’s a detailed account of the progress made and the methods employed.
+This week has been a remarkable journey in refining a method to accurately determine representative words or phrases for clusters of similar terms. By leveraging the Entailment technique and deep learning models, I managed to enhance the process of identifying the most representative terms for each cluster. Here’s a detailed account of the progress made and the methods employed.
 
 #### Initial Steps and Approach
 
@@ -55,7 +55,7 @@ To enhance the precision, I incorporated the entailment technique using the DeBE
 
 #### Visualization and Results
 
-To enhance understanding, I visualized the original and transitive closure graphs for each cluster. The visualization helped in comprehending the relationships and centrality within the clusters.
+To enhance understanding, I implemented the example code provided by the mentor to visualize the original and transitive closure graphs for each cluster. The visualization helped in understanding the relationships and centrality within the clusters.
 
 ```python
 import networkx as nx
