@@ -83,14 +83,13 @@ This week’s efforts culminated in a robust method for identifying representati
 Overall, this week has been a testament to the power of combining advanced NLP techniques with graph-based analysis to achieve precise and meaningful results in clustering and representation tasks.
 
 
-## Findings and challenges
 
 
 ## Next week plan
 For the upcoming week, our plan is to:
-- Process existing datasets for creating our intended prompt-tuning dataset.
-- Explore exisiting models that can be used for DBpedia entity resoloution. 
-- Search for instruct-tuned versions of code generation models. 
+- Proce
+- Explo
+- Sea
 
 
 ----
