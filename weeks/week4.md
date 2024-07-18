@@ -9,6 +9,8 @@ title: Week 4- Entailment Technique for Predicate Suggestion
 
 ## Overview
 
+This week has been dedicated to refining a method for accurately determining representative words or phrases for clusters of similar terms using advanced NLP Entailment techniques and deep learning models. The goal was to enhance the precision and reliability of identifying key representative terms within clusters.
+
 ### Achieving Accurate Cluster Representation
 
 This week has been a remarkable journey in refining a method to accurately determine representative words or phrases for clusters of similar terms. By leveraging the Entailment technique and deep learning models, I managed to enhance the process of identifying the most representative terms for each cluster. Here’s a detailed account of the progress made and the methods employed.
