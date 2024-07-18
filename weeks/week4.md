@@ -80,7 +80,7 @@ This week’s efforts culminated in a robust method for identifying representati
 - **Transitive Closure**: Ensured comprehensive analysis by considering indirect relationships within clusters.
 - **Visualization**: Provided clear visual representations of relationships within clusters, aiding in better understanding and validation of results.
 
-Overall, this week has been a testament to the power of combining advanced NLP techniques with graph-based analysis to achieve precise and meaningful results in clustering and representation tasks. The methodologies developed and the insights gained will undoubtedly contribute to future projects and research in NLP and data science.
+Overall, this week has been a testament to the power of combining advanced NLP techniques with graph-based analysis to achieve precise and meaningful results in clustering and representation tasks.
 
 
 ## Findings and challenges
