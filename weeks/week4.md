@@ -82,7 +82,7 @@ This week’s efforts culminated in a robust method for identifying representati
 - **Transitive Closure**: Ensured comprehensive analysis by considering indirect relationships within clusters.
 - **Visualization**: Provided clear visual representations of relationships within clusters, aiding in better understanding and validation of results.
 
-Overall, this week has been a testament to the power of combining advanced NLP techniques with graph-based analysis to achieve precise and meaningful results in clustering and representation tasks.
+Overall, this week has been great, as the mentors provided me with resources i need to understand and implement the Entailment Techniques which was combined together with with graph-based analysis to achieve precise and meaningful results in clustering and representation tasks.
 
 
 
@@ -91,9 +91,4 @@ Overall, this week has been a testament to the power of combining advanced NLP t
 For the upcoming week, our plan is to:
 - Round up this task by weekend by integrating this into our pipline
 - Start out on a new task early next week
-
-
-----
-[StarCoder models by BigCode]: https://huggingface.co/bigcode
-[dedicated repo directory]: https://github.com/dbpedia/neural-qa/tree/gsoc-mehrzad/gsoc/mehrzad
 
