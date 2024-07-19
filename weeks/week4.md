@@ -30,7 +30,7 @@ The preliminary approach involved using the Sentence Transformers model to gener
 
 To enhance the precision, I incorporated the entailment technique using the DeBERTaV2 model, which is fine-tuned for natural language inference (NLI). This method evaluates how well one sentence (or word) entails another, providing a robust metric for determining the representativeness of terms within clusters.
 
-1. **Model Initialization**:
+- **Model Initialization**:
     ```python
     from transformers import DebertaV2TokenizerFast, DebertaV2ForSequenceClassification
     import torch
@@ -43,16 +43,16 @@ To enhance the precision, I incorporated the entailment technique using the DeBE
             ).to('cuda', dtype=torch.float16)
     ```
 
-2. **Inference and Scoring**:
+- **Inference and Scoring**:
     Using the model, I calculated entailment scores for pairs of words within each cluster. The scores indicate the likelihood that one word entails another, which helps in identifying the most central terms.
 
-3. **Building a Directed Graph**:
+- **Building a Directed Graph**:
     A directed graph was constructed where nodes represented words and directed edges (with weights) represented the entailment scores. This graph was then used to compute centrality measures.
 
-4. **Transitive Closure**:
+- **Transitive Closure**:
     To ensure comprehensive analysis, I computed the transitive closure of the graph. This step ensured that indirect relationships were considered, i.e., if A entails B and B entails C, then A entails C.
 
-5. **Centrality Calculation**:
+- **Centrality Calculation**:
     Using in-degree centrality, I ranked the words to determine the most central (and hence representative) terms within each cluster.
 
 #### Visualization and Results
@@ -89,9 +89,8 @@ Overall, this week has been a testament to the power of combining advanced NLP t
 
 ## Next week plan
 For the upcoming week, our plan is to:
-- Proce
-- Explo
-- Sea
+- Round up this task by weekend by integrating this into our pipline
+- Start out on a new task early next week
 
 
 ----
