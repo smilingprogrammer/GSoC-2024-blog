@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Week 5 and 6
+title: Week 5 and 6 Finding K in Kmeans, Dataset
 ---
 
-# Week 5 & 6 🔬
+# Week 5 & 6 Finding K in Kmeans, Dataset 🔬
 
 ---
 
