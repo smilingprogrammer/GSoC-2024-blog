@@ -1,17 +1,11 @@
 ---
 layout: default
-title: Week 4- The devil is "always" in the detail!
+title: Week 5 and 6
 ---
 
-# Week 4 - The devil is "always" in the detail! 🔬
+# Week 5 & 6 🔬
 
 ---
-
-[python] Here is an article summarizing the tasks you accomplished this week, including clustering embeddings and generating textual predicates.
-
----
-
-### Weekly Summary Report
 
 #### Clustering Word Embeddings
 
@@ -54,54 +48,20 @@ The optimal number of clusters was determined, and the cluster labels were print
 
 #### Generating 100 Triples with Textual Predicates
 
-In addition to clustering embeddings, I generated 100 triples with textual predicates that are not available in the DBpedia ontology. This task involved creating subject-predicate-object triples where the predicate is a textual description not found in the existing DBpedia ontology. The purpose was to enrich the ontology with new, meaningful relationships extracted from various textual sources.
+In addition to clustering embeddings, I generated 100 triples with textual predicates that are not available in the DBpedia ontology. This task involved creating subject-predicate-object triples where the predicate is a textual description not found in the existing DBpedia ontology. The purpose was to enrich the ontology with new, meaningful relationships extracted from various textual sources. I was able to achieve this by passing some strings into the dbpedia ontology using sparql query, and checking if they are available in the dbpedia ontology `https://dbpedia.org/ontology/`.
 
-Here’s an example of how these triples might look:
-
-1. **Subject:** "Albert Einstein"  
-   **Predicate:** "formulated the theory of"  
-   **Object:** "relativity"
-
-2. **Subject:** "Marie Curie"  
-   **Predicate:** "won the Nobel Prize in"  
-   **Object:** "Physics"
-
-3. **Subject:** "Alan Turing"  
-   **Predicate:** "developed the concept of"  
-   **Object:** "a universal machine"
 
 The generation of these triples involved:
 - Extracting meaningful relationships from textual data.
 - Ensuring the predicates were unique and not present in the existing DBpedia ontology.
 - Structuring the triples in a standardized format for easy integration into the ontology.
 
+#### Scaling the pipeline
+
+While attempting to generate a large number of triples from sentences for the dataset, I decided to scale the pipeline using SparkNLP. This approach would enhance the efficiency and speed of the pipeline, enabling it to process a substantial volume of triples from various articles. However, I encountered a dependency conflict with Java in the notebook environment, preventing the successful implementation of SparkNLP. I need to further understand how to integrate SparkNLP within the notebook, as it sometimes necessitates a Java environment.
 
 ---
 
-This summary encapsulates the work done on clustering embeddings and generating new triples, highlighting the methodologies used and the outcomes achieved.
-
-
-
-
-## Overview
-
-
-
-
-## Findings and challenges 
-This week we revisited the challenge we encountered last week, that is, taking control of the length of the generated sequences. The soloution seems to be lied within the proper use of special tokens, in particular, `EOS` (End Of Sequence) token. The preassumption was that the tokenizer *might* automatically add special tokens to the input sequence. However, we observed despite using the `tokenizer.encode_plus` method, EOS token is not presented within the encoded input sequence. The following code blocks refer to our experiemnts with the `bigcode/starcoderbase-3b` checkpoint. 
-
-
-
-
-## Next week plan
-For the upcoming week, our plan is to:
-- Process existing datasets for creating our intended prompt-tuning dataset.
-- Explore exisiting models that can be used for DBpedia entity resoloution. 
-- Search for instruct-tuned versions of code generation models. 
 
 
 ----
-[StarCoder models by BigCode]: https://huggingface.co/bigcode
-[dedicated repo directory]: https://github.com/dbpedia/neural-qa/tree/gsoc-mehrzad/gsoc/mehrzad
-
