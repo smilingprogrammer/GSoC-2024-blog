@@ -60,8 +60,4 @@ The generation of these triples involved:
 
 While attempting to generate a large number of triples from sentences for the dataset, I decided to scale the pipeline using SparkNLP. This approach would enhance the efficiency and speed of the pipeline, enabling it to process a substantial volume of triples from various articles. However, I encountered a dependency conflict with Java in the notebook environment, preventing the successful implementation of SparkNLP. I need to further understand how to integrate SparkNLP within the notebook, as it sometimes necessitates a Java environment.
 
----
-
-
-
-----
+Gracias.
