@@ -14,7 +14,7 @@ This week we focused on generating unique and meaningful triples using the NEF (
 
 #### Discoveries in Ontology and Predicate Extraction
 
-Wow, what a week it has been—one of the most "time-taking" since the start of this program! This week was all about dives into generating triples with unique predicate by ontology matching and predicate extraction, which required precision, and a touch of exploration. The goal was to generate triples with unique textual predicates using the NEF (Neural Extraction Framework) from various Wikipedia abstracts. What I didn’t anticipate was just how repetitive (predicates) and similar the results would be across different abstracts.
+Wow, what a week it has been, one of the most "time-consuming" task since the start of this program! This week was all about dives into generating triples with unique predicate by ontology matching and predicate extraction, which required precision, and a touch of exploration. The goal was to generate triples with unique textual predicates using the NEF (Neural Extraction Framework) from various Wikipedia abstracts. What I didn’t anticipate was just how repetitive (predicates) and similar the results would be across different abstracts.
 
 #### The Challenge of Ontology Matching
 
