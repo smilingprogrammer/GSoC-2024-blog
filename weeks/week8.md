@@ -17,7 +17,7 @@ The task was to extract triples from text through Named Entity Recognition (NER)
 
 ### Task Overview
 
-The goal was to extract knowledge graph triplets from text. However, initial model requires a really high computational power, therefore we subtitute to using the quantized model. To achieve the usage of the quantized model, We made use of the Llama-cpp-python library and the model huggingface Python function, `triplextract()`, which enabled both NER and relationship extraction. Unlike the REBEL model, the Trplex model makes use of prompt as its input format, and also require specifying the `entity types` and `Relation` we will like to extract. Therefore we targeted entities like **LOCATION**, **DATE**, and **CITY**, and relations such as **POPULATION** and **AREA**.
+The goal was to extract knowledge graph triplets from text. However, initial model requires a really high computational power, therefore we subtitute to using the quantized model. To achieve the usage of the quantized model, We made use of the Llama-cpp-python library and implemented a function, `triplextract()`, which enabled us perform both NER and relationship extraction. Unlike the REBEL model, the Trplex model makes use of prompt as its input format, and also require specifying the `entity types` and `Relation` we will like to extract. Therefore we targeted entities like **LOCATION**, **DATE**, and **CITY**, and relations such as **POPULATION** and **AREA**.
 
 ### Implementation
 
