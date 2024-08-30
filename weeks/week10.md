@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Week 10 Entity Linking
-nav_exclude: true 
 ---
 
 # Week 10-  Entity Linking
