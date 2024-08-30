@@ -43,7 +43,15 @@ We tested our system with a diverse set of entities:
 - "2022 Russian invasion of Ukraine"
 - "Paris Agreement"
 
-Our approach successfully linked most of these to their corresponding DBpedia entities, However entities like "Paries Agreement", which is valid, doesn't get a good Wikipedia entity match. And this is due to the Entity linking model we used. Also to link each entity to its corresponding wikipedia and dbpedia match consumes a lot of time.
+Our approach successfully linked most of these to their corresponding DBpedia entities, However entities like "Paris Agreement", which is valid, doesn't get a good Wikipedia entity match. It get mapped to entities like;
+```
+['Treaty on the Final Settlement with Respect to Iraq',
+ 'Treaty on the Final Settlement with Respect to Palestine',
+ 'Treaty on the Final Settlement with Respect to Yugoslavia',
+ 'Treaty on the Final Settlement with Respect to Paris',
+ 'Treaty on the Final Settlement with Respect to Morocco']
+```
+And this is due to the Entity linking model we used. Although we can improve this by implementing a fuzzy search algorithm. However to link each entity to its corresponding wikipedia and dbpedia match consumes a lot of time.
 
 ## Next Steps
 
