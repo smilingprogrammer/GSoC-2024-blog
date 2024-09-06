@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Week 1- Entity Linking with vector search
+title: Week 11- Entity Linking with vector search
 ---
 
-# Week 1 - Entity Linking with vector search 🛣️
+# Week 11 - Entity Linking with vector search 🛣️
 
 ---
 
