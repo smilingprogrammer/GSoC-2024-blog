@@ -38,11 +38,9 @@ graph TD
     relations--get embedding-->vector_similarity(Vector similarity with label embeddings);
     vector_similarity-->predicate_uris[Predicate URIs]
 
-    pure_text-->annotation_for_genre(Annotate entities in text)
+    entities-->llm
 
-    entities-->annotation_for_genre
-
-    annotation_for_genre--annotated text-->genre[GENRE]
+    llm--annotated text-->genre[GENRE]
 
     genre-->entity_uris[Entity URIs]
     
