@@ -32,13 +32,12 @@ graph TD
     wiki_page[Wikipedia Page] --Extract plain text--> pure_text[Pure text]
 
     pure_text-->llm(LLM)
-    llm--as text-->entities[Entities]
     llm--as text-->relations[Relations]
     
     relations--get embedding-->vector_similarity(Vector similarity with label embeddings);
     vector_similarity-->predicate_uris[Predicate URIs]
 
-    llm-->entities
+    llm--as text-->entities[Entities]
 
     entities-->genre[GENRE]
 
