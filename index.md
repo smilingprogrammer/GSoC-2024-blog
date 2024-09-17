@@ -31,7 +31,7 @@ This project will potentially generate millions of new statements. This new info
 graph TD
     wiki_page[Wikipedia Page] --Extract plain text--> pure_text[Pure text]
 
-    pure_text-->rebel(REBEL)
+    pure_text-->llm(LLM)
     rebel--as text-->entities[Entities]
     rebel--as text-->relations[Relations]
     
